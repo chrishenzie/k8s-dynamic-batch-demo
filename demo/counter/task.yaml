@@ -1,0 +1,18 @@
+apiVersion: taskcontroller.chrishenzie.io/v1alpha1
+kind: Task
+metadata:
+  name: task-0
+spec:
+  clusterName: taskcluster
+  image: "counter:latest"
+  command: 
+  - /app/counter
+  inputObject: input
+---
+apiVersion: taskcontroller.chrishenzie.io/v1alpha1
+kind: TaskObject
+metadata:
+  name: input
+data:
+  count: "0"
+  limit: "50"

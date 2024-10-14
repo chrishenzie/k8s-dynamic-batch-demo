@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: task-controller
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: task-controller
+  template:
+    metadata:
+      labels:
+        app: task-controller
+    spec:
+      serviceAccountName: task-controller-sa
+      containers:
+      - name: task-controller
+        image: "task-controller:latest"
+        imagePullPolicy: IfNotPresent
+        command: 
+        - /app/task-controller

@@ -1,0 +1,8 @@
+apiVersion: taskcontroller.chrishenzie.io/v1alpha1
+kind: TaskCluster
+metadata:
+  name: taskcluster
+spec:
+  deploymentName: taskcluster
+  replicas: 3
+  serviceAccountName: task-sa
