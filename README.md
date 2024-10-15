@@ -51,9 +51,9 @@ a counter. It does the following:
 1. If not, it creates a new Task and TaskObject with `count = count + 1`.
 1. This continues until `count == limit`.
 
-You can see the demo in action on [asciicast](https://asciinema.org/a/RgZS1VOMVw0RNDms4MvkAojgn).
+You can see the demo in action on [asciinema](https://asciinema.org/a/RgZS1VOMVw0RNDms4MvkAojgn).
 
-[![asciicast](https://asciinema.org/a/RgZS1VOMVw0RNDms4MvkAojgn.svg)](https://asciinema.org/a/RgZS1VOMVw0RNDms4MvkAojgn)
+[![asciinema](images/asciinema.svg)](https://asciinema.org/a/RgZS1VOMVw0RNDms4MvkAojgn)
 
 **NOTE:** The video above uses a [forked
 version](https://github.com/chrishenzie/k9s/tree/ephemeral-containers) of
@@ -80,8 +80,9 @@ demo/counter/watch.sh
 demo/counter/verify.sh
 ```
 
-**NOTE:** [kind](https://kind.sigs.k8s.io/) is used for the demo cluster and
-needs installation for the above scripts to work.
+**NOTE:** [`kind`](https://kind.sigs.k8s.io/), [`docker`](https://docker.com/),
+and [`kubectl`](https://kubernetes.io/docs/reference/kubectl/) are required for
+the above scripts to work.
 
 ## Known Limitations
 
