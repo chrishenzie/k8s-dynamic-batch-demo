@@ -27,6 +27,8 @@ For more background, refer to [@dchen1107](https://github.com/dchen1107)'s
 
 ### Task Lifecycle
 
+[![overview](images/overview.svg)]()
+
 The `task-controller` continuously watches for new Tasks and TaskObjects. When a
 TaskObject is created, the controller identifies the corresponding Tasks that
 use it and enqueues them for reconciliation.
